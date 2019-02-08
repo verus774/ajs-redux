@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "title": "MBNA",
+    "img": "assets/img/card1.jpg",
+    "link": "https://ya.ru",
+    "rewards": [],
+    "purchases": {
+      "percent": 0,
+      "period": "28 months",
+      "thenPercent": 19.9
+    }
+  },
+  {
+    "id": "2",
+    "title": "Sainsbury's Bank",
+    "img": "assets/img/card2.jpg",
+    "link": "https://ya.ru",
+    "rewards": ["Netcar"],
+    "purchases": {
+      "percent": 0,
+      "period": "28 months",
+      "thenPercent": 20.95
+    }
+  },
+  {
+    "id": "3",
+    "title": "Barclaycard",
+    "img": "assets/img/card3.jpg",
+    "link": "https://ya.ru",
+    "rewards": ["Entertainment", "Cashback"],
+    "purchases": {
+      "percent": 0,
+      "period": "27 months",
+      "thenPercent": 19.9
+    }
+  }
+]

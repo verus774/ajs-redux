@@ -1,0 +1,124 @@
+@import "colors";
+
+.card-item {
+  background-color: #fff;
+  padding: 10px 15px;
+  margin: 15px 0;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__info {
+    display: flex;
+    align-items: center;
+  }
+
+  &__info-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+  }
+
+  &__additional-info-container {
+    display: flex;
+  }
+
+  &__additional-info-item {
+    border-left: 2px solid #d9dcdd;
+    padding: 0 10px;
+
+    * {
+      margin: 10px 0;
+    }
+  }
+
+  &__additional-info-item-heading {
+    font-weight: normal;
+  }
+
+  &__additional-info-item-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+  }
+
+  &__reward-item {
+    display: inline;
+    margin: 5px 7px 5px 0;
+    padding: 8px;
+
+    &--gray-card {
+      color: #485364;
+      background-color: #ebf0f2;
+      border-radius: 3px;
+    }
+  }
+
+
+  &__actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &--btn-primary {
+      color: #fff;
+      background-color: $primaryColor;
+      text-align: center;
+      border-radius: 20px;
+      padding: 10px 20px;
+      text-transform: uppercase;
+      font-weight: bold;
+
+      &:hover {
+        background-color: darken($primaryColor, 5%);
+      }
+    }
+  }
+
+  &__actions-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 20px;
+    align-items: center;
+    text-align: center;
+
+    :first-child {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__chance-of-approval {
+    text-align: center;
+    border: 2px solid $secondaryColor;
+    border-radius: 5px;
+    font-weight: bold;
+
+    p {
+      margin: 0;
+      padding: 0;
+    }
+
+    :first-child {
+      padding: 5px 10px;
+      text-transform: uppercase;
+      background-color: $secondaryColor;
+      color: #fff;
+    }
+
+    :last-child {
+      background-color: #fff;
+      color: $secondaryColor;
+      padding: 10px 20px;
+      text-transform: lowercase;
+
+      &:first-letter {
+        text-transform: uppercase;
+      }
+
+    }
+  }
+}

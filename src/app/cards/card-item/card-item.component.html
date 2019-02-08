@@ -1,0 +1,45 @@
+<article class="card-item">
+    <div class="card-item__info">
+        <img ng-src="{{$ctrl.card.img}}" width="164" height="104" alt="{{$ctrl.card.title}}">
+        <div class="card-item__info-container">
+            <h3>{{ $ctrl.card.title }}</h3>
+            <div class="card-item__additional-info-container">
+                <article class="card-item__additional-info-item">
+                    <h4 class="card-item__additional-info-item-heading">Purchases</h4>
+
+                    <p class="card-item__additional-info-item-content">
+                        <strong>
+                            {{ $ctrl.card.purchases.percent + '% ' + $ctrl.card.purchases.period }}
+                        </strong>
+                    </p>
+                    <p class="card-item__additional-info-item-content">then {{ $ctrl.card.purchases.thenPercent }}&nbsp;%</p>
+                </article>
+
+                <article class="card-item__additional-info-item">
+                    <h4 class="card-item__additional-info-item-heading">Rewards</h4>
+
+                    <p class="card-item__additional-info-item-content">
+                        <span class="card-item__reward-item card-item__reward-item--gray-card" ng-if="!$ctrl.card.rewards.length">No rewards</span>
+                        <span class="card-item__reward-item card-item__reward-item--gray-card" ng-repeat="reward in $ctrl.card.rewards track by $index">
+                        {{ reward }}
+                    </span>
+                    </p>
+                </article>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-item__actions">
+        <div class="card-item__actions-container">
+            <div class="card-item__chance-of-approval">
+                <p>chance of approval</p>
+                <p>eligibility checker</p>
+            </div>
+            <a ng-href="{{$ctrl.card.link}}" target="_blank">Start ></a>
+        </div>
+        <div class="card-item__actions-container">
+            <a class="card-item__actions--btn-primary" ng-href="{{$ctrl.card.link}}" target="_blank">Go to site</a>
+            <a class="" ng-href="{{$ctrl.card.link}}" target="_blank">Full product details</a>
+        </div>
+    </div>
+</article>
